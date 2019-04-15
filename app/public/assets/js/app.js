@@ -1,5 +1,19 @@
 let isValid = true;
 
+$(".chosen-select").chosen({
+   disable_search: true, allow_single_deselect: true, disable_search_threshold: 10, width: "95%" 
+})
+// var config = {
+//   '.chosen-select'           : {},
+//   '.chosen-select'           : {disable_search:true},
+//   '.chosen-select-deselect'  : {allow_single_deselect:true},
+//   '.chosen-select-no-single' : {disable_search_threshold:10},
+//   '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+// }
+// for (var selector in config) {
+//   	$(selector).chosen(config[selector]);
+// }
+
 $("#submitBtn").on("click", function(event) {
     event.preventDefault();
 //FORM VALIDATION
@@ -10,7 +24,15 @@ function validateForm(){
       console.log(this)
     }
   })
+$(".chosen-select").each(function(){
+  if($(this).val() === ""){
+      isValid = false;
+      console.log(this)
+  }
+})
 }
+
+
 validateForm();
 
 // if()

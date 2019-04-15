@@ -19,232 +19,258 @@
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <!--jQuery-->
-    <script
-  src="https://code.jquery.com/jquery-3.4.0.min.js"
-  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <!-- Chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 </head>
 
 <body class="main">
-<div class="container main">
-    <!--Jumbotron-->
-    <div class="jumbotron jumbotron-fluid text-center">
-        <h1 class="display-4">Find Your New Best Friend</h1>
-    </div>
+    <div class="container main">
+        <!--Jumbotron-->
+        <div class="jumbotron jumbotron-fluid text-center">
+            <h1 class="display-4">Find Your New Best Friend</h1>
+        </div>
 
-    <!--Survey Block-->
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="card border-0">
-                    <!--About-->
-                    <div class="card-header">About</div>
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group ml-3 mr-4 mt-3">
-                                <label>Please provide your name</label>
-                                <input id="name" type="text" class="form-control" placeholder="Name (Required)"><br>
-                                <label>Please provide a link to your photo</label>
-                                <input id="photo" type="text" class="form-control" placeholder="Photo (Required)">
-                            </div>
-                        </form>
+        <!--Survey Block-->
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card border-0">
+                        <!--About-->
+                        <div class="card-header">About</div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group ml-3 mr-4 mt-3">
+                                    <label>Please provide your name</label>
+                                    <input id="name" type="text" class="form-control" placeholder="Name (Required)"><br>
+                                    <label>Please provide a link to your photo</label>
+                                    <input id="photo" type="text" class="form-control" placeholder="Photo (Required)">
+                                </div>
+                            </form>
+                        </div>
+                        <!--Survey-->
+                        <div class="card-header">Survey</div>
+                        <div class="card-body">
+                            <!--Question 1 and 2-->
+                            <form>
+                                <div class="form-group">
+                                    <div class="form-row">
+                                        <div class="col-lg-12">
+                                            <label for="q1">1. What type of home do you have?</label>
+                                            <select data-placeholder="Select an Option"
+                                                class="form-control chosen-select" id="q1">
+                                                <option value="0"></option>
+                                                <option value="1">Shared Apartment/Roomate</option>
+                                                <option value="2">Apartment/Condo</option>
+                                                <option value="3">Townhouse</option>
+                                                <option value="4">Bungalow</option>
+                                                <option value="5">Mansion</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row mt-3">
+                                        <div class="col-lg-12">
+                                            <label for="q2">2. How much do you like to
+                                                vacuum?</label>
+                                            <select data-placeholder="Select an Option"
+                                                class="form-control chosen-select" id="q2">
+                                                <option value="0"></option>
+                                                <option value="1">What's a vacuum?</option>
+                                                <option value="2">As little as possible</option>
+                                                <option value="3">Twice a month</option>
+                                                <option value="4">Every week</option>
+                                                <option value="5">Multiple times a week</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--Question 3 and 4-->
+                                    <div class="form-row mt-3">
+                                        <div class="col-lg-12">
+                                            <label for="q3">3. How affectionate would you like your
+                                                pet
+                                                to
+                                                be?</label>
+                                            <select data-placeholder="Select an Option"
+                                                class="form-control chosen-select" id="q3">
+                                                <option value="0"></option>
+                                                <option value="1">Aloof</option>
+                                                <option value="2">Independent</option>
+                                                <option value="3">Greets me at the door</option>
+                                                <option value="4">Cuddles and scratches most of the time</option>
+                                                <option value="5">Glued to me</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row mt-3">
+                                        <div class="col-lg-12">
+                                            <label for="q4">4. How much training will you put in to
+                                                your pet?</label>
+                                            <select data-placeholder="Select an Option"
+                                                class="form-control chosen-select" id="q4">
+                                                <option value="0"></option>
+                                                <option value="1">No Training</option>
+                                                <option value="2">Basic House Training</option>
+                                                <option value="3">Some Tricks</option>
+                                                <option value="4">Pay for training sessions with dog</option>
+                                                <option value="5">Pay someone to train the dog</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--Question 5 and 6-->
+                                    <div class="form-row mt-3">
+                                        <div class="col-lg-12">
+                                            <label for="q5">5. How often will you groom your
+                                                pet?</label>
+                                            <select data-placeholder="Select an Option"
+                                                class="form-control chosen-select" id="q5">
+                                                <option value="0"></option>
+                                                <option value="1">What is grooming?</option>
+                                                <option value="2">Once a week</option>
+                                                <option value="3">2-3 times a week</option>
+                                                <option value="4">5 times a week</option>
+                                                <option value="5">Every day</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row mt-3">
+                                        <div class="col-lg-12">
+                                            <label for="q6">6. What size pet are you looking
+                                                for?</label>
+                                            <select data-placeholder="Select an Option"
+                                                class="form-control chosen-select" id="q6">
+                                                <option value="0"></option>
+                                                <option value="1">Tiny (up to 11 pounds)</option>
+                                                <option value="2">Small (12-22 pounds)</option>
+                                                <option value="3">Medium (23-44 pounds)</option>
+                                                <option value="4">Large (45-88 pounds)</option>
+                                                <option value="5">Gigantic (89-140 pounds)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--Question 7 and 8-->
+                                    <div class="form-row mt-3">
+                                        <div class="col-lg-12">
+                                            <label for="q7">7. How long are you away during the
+                                                day?</label>
+                                            <select data-placeholder="Select an Option"
+                                                class="form-control chosen-select" id="q7">
+                                                <option value="0"></option>
+                                                <option value="1">Home most of the day</option>
+                                                <option value="2">Go out periodically</option>
+                                                <option value="3">Gone for about 4 hours at a time</option>
+                                                <option value="4">Gone for 8 hours</option>
+                                                <option value="5">Over 8 hours</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row mt-3">
+                                        <div class="col-lg-12">
+                                            <label for="q8">8. How much time can you exercise your
+                                                pet?</label>
+                                            <select data-placeholder="Select an Option"
+                                                class="form-control chosen-select" id="q8">
+                                                <option value="0"></option>
+                                                <option value="1">Little to None</option>
+                                                <option value="2">20 - 30 minutes</option>
+                                                <option value="3">30 - 45 minutes</option>
+                                                <option value="4">45 - 60 minutes</option>
+                                                <option value="5">Over an hour</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--Question 9 and 10-->
+                                    <div class="form-row mt-3">
+                                        <div class="col-lg-12">
+                                            <label for="q9">9. How active are you?</label>
+                                            <select data-placeholder="Select an Option"
+                                                class=" form-control chosen-select" id="q9">
+                                                <option value="0"></option>
+                                                <option value="1">Coach Potato</option>
+                                                <option value="2">Casual Jaunt</option>
+                                                <option value="3">Walker</option>
+                                                <option value="4">Jogger</option>
+                                                <option value="5">Sprinter</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row mt-3">
+                                        <div class="col-lg-12">
+                                            <div></div>
+                                            <label for="q10">10. Have you had other dogs?</label>
+                                            <select data-placeholder="Select an Option"
+                                                class="form-control chosen-select" id="q10">
+                                                <option value="0"></option>
+                                                <option value="1">First Time</option>
+                                                <option value="2">As a Child</option>
+                                                <option value="3">Novice</option>
+                                                <option value="4">Experienced</option>
+                                                <option value="5">Super Experienced</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary submit" id="submitBtn">Submit</button>
+                            </form>
+                        </div>
                     </div>
-                    <!--Survey-->
-                    <div class="card-header">Survey</div>
-                    <div class="card-body">
-                        <!--Question 1 and 2-->
-                        <form>
-                            <div class="form-group">
-                                <div class="form-row">
-                                    <div class="col-lg-12">
-                                        <label for="q1">1. What type of home do you have?</label>
-                                        <select class="form-control chosen-select" id="q1">
-                                            <option value="1">Shared Apartment/Roomate</option>
-                                            <option value="2">Apartment/Condo</option>
-                                            <option value="3">Townhouse</option>
-                                            <option value="4">Bungalow</option>
-                                            <option value="5">Mansion</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-row mt-3">
-                                    <div class="col-lg-12">
-                                        <label for="q2">2. How much do you like to
-                                            vacuum?</label>
-                                        <select class="form-control" id="q2">
-                                            <option value="1">What's a vacuum?</option>
-                                            <option value="2">As little as possible</option>
-                                            <option value="3">Twice a month</option>
-                                            <option value="4">Every week</option>
-                                            <option value="5">Multiple times a week</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!--Question 3 and 4-->
-                                <div class="form-row mt-3">
-                                    <div class="col-lg-12">
-                                        <label for="q3">3. How affectionate would you like your
-                                            pet
-                                            to
-                                            be?</label>
-                                        <select class="form-control" id="q3">
-                                            <option value="1">Aloof</option>
-                                            <option value="2">Independent</option>
-                                            <option value="3">Greets me at the door</option>
-                                            <option value="4">Cuddles and scratches most of the time</option>
-                                            <option value="5">Glued to me</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-row mt-3">
-                                    <div class="col-lg-12">
-                                        <label for="q4">4. How much training will you put in to
-                                            your pet?</label>
-                                        <select class="form-control" id="q4">
-                                            <option value="1">No Training</option>
-                                            <option value="2">Basic House Training</option>
-                                            <option value="3">Some Tricks</option>
-                                            <option value="4">Pay for training sessions with dog</option>
-                                            <option value="5">Pay someone to train the dog</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!--Question 5 and 6-->
-                                <div class="form-row mt-3">
-                                    <div class="col-lg-12">
-                                        <label for="q5">5. How often will you groom your
-                                            pet?</label>
-                                        <select class="form-control" id="q5">
-                                            <option value="1">What is grooming?</option>
-                                            <option value="2">Once a week</option>
-                                            <option value="3">2-3 times a week</option>
-                                            <option value="4">5 times a week</option>
-                                            <option value="5">Every day</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-row mt-3">
-                                    <div class="col-lg-12">
-                                        <label for="q6">6. What size pet are you looking
-                                            for?</label>
-                                        <select class="form-control" id="q6">
-                                            <option value="1">Tiny (up to 11 pounds)</option>
-                                            <option value="2">Small (12-22 pounds)</option>
-                                            <option value="3">Medium (23-44 pounds)</option>
-                                            <option value="4">Large (45-88 pounds)</option>
-                                            <option value="5">Gigantic (89-140 pounds)</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!--Question 7 and 8-->
-                                <div class="form-row mt-3">
-                                    <div class="col-lg-12">
-                                        <label for="q7">7. How long are you away during the
-                                            day?</label>
-                                        <select class="form-control" id="q7">
-                                            <option value="1">Home most of the day</option>
-                                            <option value="2">Go out periodically</option>
-                                            <option value="3">Gone for about 4 hours at a time</option>
-                                            <option value="4">Gone for 8 hours</option>
-                                            <option value="5">Over 8 hours</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-row mt-3">
-                                    <div class="col-lg-12">
-                                        <label for="q8">8. How much time can you exercise your
-                                            pet?</label>
-                                        <select class="form-control" id="q8">
-                                            <option value="1">Little to None</option>
-                                            <option value="2">20 - 30 minutes</option>
-                                            <option value="3">30 - 45 minutes</option>
-                                            <option value="4">45 - 60 minutes</option>
-                                            <option value="5">Over an hour</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!--Question 9 and 10-->
-                                <div class="form-row mt-3">
-                                    <div class="col-lg-12">
-                                        <label for="q9">9. How active are you?</label>
-                                        <select class="form-control" id="q9">
-                                            <option value="1">Coach Potato</option>
-                                            <option value="2">Casual Jaunt</option>
-                                            <option value="3">Walker</option>
-                                            <option value="4">Jogger</option>
-                                            <option value="5">Sprinter</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-row mt-3">
-                                    <div class="col-lg-12">
-                                        <div></div>
-                                        <label for="q10">10. Have you had other dogs?</label>
-                                        <select class="form-control" id="q10">
-                                            <option value="1">First Time</option>
-                                            <option value="2">As a Child</option>
-                                            <option value="3">Novice</option>
-                                            <option value="4">Experienced</option>
-                                            <option value="5">Super Experienced</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary submit" id="submitBtn">Submit</button>
-                        </form>
+                </div>
+                <!--/Close Survey-->
+
+                <!--Images-->
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="../assets/images/dogWithFlowers.jpg"
+                            alt="Image of Dog with Flowers">
+                        <img class="card-img-top" src="../assets/images/GoldenRetrieverBubbles.jpg"
+                            alt="Image of Golden Retriever with Bubbles">
+                        <img class="card-img-top" src="../assets/images/Samoyed.jpg" alt="Image of Samoyed">
+                        <img class="card-img-top" src="../assets/images/dogpuppiescorgi-1555291796214-6455.jpg"
+                            alt="Image of Corgi Puppy">
+                        <img class="card-img-top" src="../assets/images/husky.jpg" alt="Image of Husky">
+                        <!-- <img class="card-img-top" src="../assets/images/Puppies.jpg" alt="Image of Puppies">
+                        <img class="card-img-top" src="../assets/images/labradorCouch.jpg"
+                            alt="Image of Black Labrador">
+                         -->
+
                     </div>
                 </div>
             </div>
-            <!--/Close Survey-->
-
-            <!--Images-->
-            <div class="col-lg-4">
-                <div class="card border-0">
-                    <img class="card-img-top" src="../assets/images/dogWithFlowers.jpg" alt="Image of Dog with Flowers">
-                    <img class="card-img-top" src="../assets/images/GoldenRetrieverBubbles.jpg" alt="Image of Golden Retriever with Bubbles">
-                    <img class="card-img-top" src="../assets/images/Samoyed.jpg" alt="Image of Samoyed">
-                    <img class="card-img-top" src="../assets/images/Puppies.jpg" alt="Image of Puppies">
-                    <img class="card-img-top" src="../assets/images/labradorCouch.jpg" alt="Image of Black Labrador">
-                    <img class="card-img-top" src="../assets/images/dogpuppiescorgi-1555291796214-6455.jpg"
-                        alt="Image of Corgi Puppy">
-                        <img class="card-img-top" src="../assets/images/husky.jpg"
-                        alt="Image of Husky">
-                </div>
-            </div>
         </div>
-    </div>
-    <!-- Modal -->
-    <div id="resultsModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+        <!-- Modal -->
+        <div id="resultsModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h2 class="modal-title"><strong>Best Match</strong></h2>
-                </div>
-                <div class="modal-body">
-                    <div class="col-xs-12 col-md-6">
-                        <h2 id="matchName"></h2>
-                        <img id="matchImg" src="https://placehold.it/400" alt="" class="img-responsive">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-xs-12 col-md-6">
+                            <h2 id="matchName"></h2>
+                            <img id="matchImg" src="https://placehold.it/400" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+
             </div>
-
         </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/pets">API Pet List<span> | </span> </a>
+                    <a href="" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Repo<span> | </span> </a>
+                    <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></p>
+            </div>
+        </footer>
     </div>
-
-    <footer class="footer">
-        <div class="container">
-            <p><a href="/api/pets">API Pet List<span> | </span> </a>
-                <a href="https://github.com/jasonboru/FriendFinder" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Repo<span> | </span> </a>
-                <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></p>
-        </div>
-    </footer>
-</div>
-<script type="text/javascript" src="./assets/js/app.js"></script>
+    <script type="text/javascript" src="./assets/js/app.js"></script>
 </body>
+
 </html>
