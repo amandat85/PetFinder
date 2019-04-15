@@ -1,54 +1,54 @@
 //Data to compare user results to
 let pets = [
     {
-        breed: "American Eskimo Dog",
+        name: "American Eskimo Dog",
         photo: "../assets/images/AmericanEskimoDog.jpg",
         scores: [1, 5, 5, 2, 3, 3, 2, 4, 5, 2]
     },
     {
-        breed: "Beagle",
+        name: "Beagle",
         photo: "../assets/images/Beagle.jpg",
         scores: [2, 3, 5, 5, 2, 2, 1, 4, 4, 3]
     },
     {
-        breed: "Bernese Mountain Dog",
+        name: "Bernese Mountain Dog",
         photo: "../assets/images/BerneseMountainDog.jpg",
         scores: [5, 5, 5, 2, 3, 4, 3, 4, 2]
     },
     {
-        breed: "Border Collie",
+        name: "Border Collie",
         photo: "../assets/images/BorderCollie.jpg",
-        scores: []
+        scores: [4, 3, 5, 1, 3, 3, 1, 5, 5, 2]
     },
     {
-        breed: "Cardigan Welsh Corgi",
+        name: "Cardigan Welsh Corgi",
         photo: "../assets/images/CardiganWelshCorgi.jpg",
-        scores: [] 
+        scores: [2, 4, 5, 4, 3, 3, 3, 3, 3, 2] 
     }, 
     {
-        breed: "Golden Retriever",
+        name: "Golden Retriever",
         photo: "../assets/images/GoldenRetriever.jpg",
-        scores: [] 
+        scores: [4, 5, 5, 1, 4, 4, 1, 5, 5, 3] 
     }, 
     {
-        breed: "Great Dane",
+        name: "Great Dane",
         photo: "../assets/images/GreatDane.jpg",
-        scores: [] 
+        scores: [5, 5, 1, 1, 5, 5, 1, 5, 5, 5] 
     }, 
     {
-        breed: "Labrador Retriever",
+        name: "Labrador Retriever",
         photo: "../assets/images/LabradorRetriever.jpg",
-        scores: [] 
+        scores: [5, 5, 1, 1, 1, 4, 2, 5, 5, 3] 
     },
     {
-        breed: "Pomeranian",
+        name: "Pomeranian",
         photo: "../assets/images/Pomeranian.jpg",
-        scores: [] 
+        scores: [4, 4, 5, 2, 4, 1, 1, 3, 2, 2,] 
     }, 
     {
-        breed: "St. Bernard",
+        name: "Saint Bernard",
         photo: "../assets/images/SaintBernard.jpg",
-        scores: [] 
+        scores: [3, 4, 5, 4, 4, 5, 1, 2, 3, 4] 
     }, 
 ]
 

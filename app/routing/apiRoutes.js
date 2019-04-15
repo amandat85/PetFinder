@@ -1,7 +1,7 @@
 //GET Route to /api/friends
 //POST route to /api/friends
 
-let pets = require("../data/users.js")
+let pets = require("../data/pets.js")
 
 module.exports = (app) => {
     app.get("/api/pets", (req, res) => {

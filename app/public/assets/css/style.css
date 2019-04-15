@@ -4,7 +4,7 @@
 }
 
 body{
-    line-height: 150%;
+    line-height: 120%;
     font-size: 14pt;
     font-family: 'Raleway', sans-serif;
 }
@@ -21,7 +21,6 @@ h1, h2 {
 
 .main {
     background-color: #8B8C70;
-    font-family: 'Raleway', sans-serif;
 }
 
 .jumbotron {
@@ -30,7 +29,7 @@ h1, h2 {
 }
 
 .card-body {
-    background-color: #F0E7D6
+    background-color: rgb(239, 238, 237);
 }
 
 .card-header {
