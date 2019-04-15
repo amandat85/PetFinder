@@ -8,7 +8,14 @@ module.exports = (app) => {
         res.json(pets);
     })
 
-    // app.post("/api/users", (req, res) => {
-    //     users.push(req.body);
-    // })
+    app.post("/api/pets", (req, res) => {
+        console.log(req.body.scores);
+
+        let user = req.body
+
+        for(var i = 0; i < user.scores.length; i++){
+            user.scores[i] = parseInt(user.scores[i]);
+            console.log(user.scores[i])
+        }
+    })
 }
