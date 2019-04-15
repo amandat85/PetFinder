@@ -8,7 +8,7 @@ module.exports = (app) => {
         res.json(pets);
     })
 
-    app.post("/api/users", (req, res) => {
-        users.push(req.body);
-    })
+    // app.post("/api/users", (req, res) => {
+    //     users.push(req.body);
+    // })
 }

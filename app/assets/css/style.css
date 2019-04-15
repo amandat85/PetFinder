@@ -6,10 +6,51 @@
 body{
     line-height: 150%;
     font-size: 14pt;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1, h2 {
-    font-family: 'Fascinate Inline', cursive;
+    font-family: 'Shrikhand', cursive;
 }
 
+.homeImage{
+    background-image: url("../images/bernerAndCat.jpg");
+    background-size: cover;
+
+}
+
+.main {
+    background-color: #8B8C70;
+    font-family: 'Raleway', sans-serif;
+}
+
+.jumbotron {
+    background: none;
+    color: #F5EFE2;
+}
+
+.card-body {
+    background-color: #F0E7D6
+}
+
+.card-header {
+    background-color: #8C030E;
+    color: #F0E7D6;
+}
+
+#submitBtn {
+    background-color: #8C030E;
+    color: #F0E7D6;
+}
+
+a {
+    color: #000000
+}
+
+#surveyBtn {
+    color: #F0E7D6;
+}
+
+#surveyBtn:hover {
+    color: #000000
+}

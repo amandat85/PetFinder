@@ -1,14 +1,11 @@
 //DEFINE VARIABLES==========================================
-//Require express and path
+//Require express
 const express = require("express");
-const path = require("path");
 const bodyParser = require("body-parser")
 let app = express();
 
-
-
-
-var port = process.env.PORT || 3000;
+//SET PORT=================================================
+let port = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));

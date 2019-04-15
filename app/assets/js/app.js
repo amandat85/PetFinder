@@ -2,7 +2,7 @@ $(".submit").on("click", function(event) {
     event.preventDefault();
 
     // Here we grab the form elements
-    var newUsers= {
+    let newUsers= {
       customerName: $("#reserve-name").val().trim(),
       phoneNumber: $("#reserve-phone").val().trim(),
       customerEmail: $("#reserve-email").val().trim(),

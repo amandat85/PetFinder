@@ -1,14 +1,16 @@
-//GET route to survey
-//Default route to home.html
+//REQUIRE DEPENDENCIES===============================================
 const path = require("path");
 
-module.exports = function(app){
+//ROUTING========================================================
+module.exports = (app) => {
 
-app.get("/survey", function(req, res) {
+//Survey
+app.get("/survey", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
 
-app.get("*", function(req, res) {
+//Default Home
+app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/home.html"))
   }); 
 };
