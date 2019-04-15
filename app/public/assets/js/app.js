@@ -1,44 +1,41 @@
 let isValid = true;
 
 $(".chosen-select").chosen({
-   disable_search: true, allow_single_deselect: true, disable_search_threshold: 10, width: "95%" 
+  disable_search: true, allow_single_deselect: true, disable_search_threshold: 10, width: "95%"
 })
 // var config = {
-//   '.chosen-select'           : {},
+//   '.chosen-select': {},
 //   '.chosen-select'           : {disable_search:true},
-//   '.chosen-select-deselect'  : {allow_single_deselect:true},
-//   '.chosen-select-no-single' : {disable_search_threshold:10},
-//   '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+//   '.chosen-select-deselect': { allow_single_deselect: true },
+//   '.chosen-select-no-single': { disable_search_threshold: 10 },
+//   '.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
 // }
 // for (var selector in config) {
-//   	$(selector).chosen(config[selector]);
+//   $(selector).chosen(config[selector]);
 // }
+//FORM VALIDATION==========================================================
+$("#submitBtn").on("click", function (event) {
+  event.preventDefault();
 
-$("#submitBtn").on("click", function(event) {
-    event.preventDefault();
-//FORM VALIDATION
-function validateForm(){
-  $(".form-control").each(function(){
-    if($(this).val() === ""){
-      isValid = false;
-      console.log(this)
-    }
-  })
-$(".chosen-select").each(function(){
-  if($(this).val() === ""){
-      isValid = false;
-      console.log(this)
+  if ($("#name").val() === "" || $("#photo").val() === "") {
+    isValid = false;
+    console.log("bah")
   }
-})
-}
+  else if ($(".chosen-select").val() === "0") {
+    isValid = false;
+    console.log("vah")
+  }
 
+});
 
-validateForm();
-
-// if()
-
-//IF VALID
   //Get value of name and photo
+  let users = {
+    name: $("#name").val().trim(),
+    photo: ("#photo").val().trim(),
+    scores: [
+          $("#q1").val().trim(),
+    ]
+  }
   //Loop through chosen answers
   //Push answers into array in object, push photo and name into object
 
@@ -92,5 +89,3 @@ validateForm();
   //       $("#reserve-unique-id").val("");
 
   //     });
-
-  });
