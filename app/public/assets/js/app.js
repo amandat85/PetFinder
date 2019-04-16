@@ -45,12 +45,11 @@ $("#submitBtn").on("click", function (event) {
             ]
         }
         console.log(user);
-        let currentURL = window.location.origin;
-        console.log(currentURL)
+        
         $.post("/api/users", user, function(data) {
             $("#matchName").text(data.name);
             $("#matchImg").attr("src", data.photo);
-            $("#matchModal").modal('toggle');
+            $("#matchModal").modal("toggle")
         });
     }
 

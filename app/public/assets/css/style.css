@@ -16,6 +16,9 @@ h1, h2 {
 .homeImage{
     background-image: url("../images/bernerAndCat.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 
@@ -37,7 +40,7 @@ h1, h2 {
     color: #F0E7D6;
 }
 
-#submitBtn {
+#submitBtn, #modalClose {
     background-color: #8C030E;
     color: #F0E7D6;
 }
@@ -52,4 +55,16 @@ a {
 
 #surveyBtn:hover {
     color: #000000
+}
+
+/*Fix*/
+.modal-title{ 
+    text-align: center;
+}
+#matchName {
+    text-align: left;
+}
+
+#matchImg {
+    width: 100%;
 }
