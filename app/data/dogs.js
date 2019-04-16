@@ -1,5 +1,5 @@
 //Data to compare user results to
-let pets = [
+let dogs = [
     {
         name: "American Eskimo Dog",
         photo: "../assets/images/AmericanEskimoDog.jpg",
@@ -52,4 +52,4 @@ let pets = [
     }, 
 ]
 
-module.exports = pets
+module.exports = dogs

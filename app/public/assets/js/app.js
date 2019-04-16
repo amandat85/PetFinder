@@ -17,7 +17,7 @@ $(".chosen-select").chosen({
 $("#submitBtn").on("click", function (event) {
     event.preventDefault();
 
-    if ($("#name").val() === "" || $("#photo").val() === "") {
+    if ($(".form-control").val() ==="") {
         isValid = false;
         console.log("bah")
     }
@@ -45,51 +45,25 @@ $("#submitBtn").on("click", function (event) {
             ]
         }
         console.log(user);
-        $.post("/api/pets", user, (data) => {
+        let currentURL = window.location.origin;
+        console.log(currentURL)
+        $.post("/api/users", user, function(data) {
             $("#matchName").text(data.name);
             $("#matchImg").attr("src", data.photo);
-            $("#matchModal").modal("toggle");
+            $("#matchModal").modal('toggle');
         });
     }
 
 
-//POST TO JSON WITH $POST========================================
+// POST TO JSON WITH $POST========================================
 
 
 });
-//CLEAR USER INPUT ON SUBMIT
+// CLEAR USER INPUT ON SUBMIT
 
-//COMPARE USER RESULTS TO JSON RESULTS
+// COMPARE USER RESULTS TO JSON RESULTS
 
-//MODAL POP OF MATCH
-
-
-//WRITE IN VANILLA JS
-//REMEMBER TO LINK THIS FILE!!!!!!
+// MODAL POP OF MATCH
 
 
-  //   // This line is the magic. It"s very similar to the standard ajax function we used.
-  //   // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-  //   // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-  //   // depending on if a tables is available or not.
-
-  //   $.post("/api/users", newUsers,
-  //     function(data) {
-
-  //       // If a table is available... tell user they are booked.
-  //       // if (data) {
-  //       //   alert("Yay! You are officially booked!");
-  //       // }
-
-  //       // If a table is available... tell user they on the waiting list.
-  //       // else {
-  //       //   alert("Sorry you are on the wait list");
-  //       // }
-
-  //       // Clear the form when submitting
-  //       $("#reserve-name").val("");
-  //       $("#reserve-phone").val("");
-  //       $("#reserve-email").val("");
-  //       $("#reserve-unique-id").val("");
-
-  //     });
+// WRITE IN VANILLA JS
