@@ -3,16 +3,7 @@ let isValid = true;
 $(".chosen-select").chosen({
     disable_search: true, allow_single_deselect: true, disable_search_threshold: 10, width: "95%"
 })
-// var config = {
-//   '.chosen-select': {},
-//   '.chosen-select'           : {disable_search:true},
-//   '.chosen-select-deselect': { allow_single_deselect: true },
-//   '.chosen-select-no-single': { disable_search_threshold: 10 },
-//   '.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
-// }
-// for (var selector in config) {
-//   $(selector).chosen(config[selector]);
-// }
+
 //FORM VALIDATION==========================================================
 $("#submitBtn").on("click", function (event) {
     event.preventDefault();
@@ -45,24 +36,17 @@ $("#submitBtn").on("click", function (event) {
             ]
         }
         console.log(user);
-        
+// POST TO JSON WITH $POST========================================        
         $.post("/api/users", user, function(data) {
             $("#matchName").text(data.name);
             $("#matchImg").attr("src", data.photo);
             $("#matchModal").modal("toggle")
         });
     }
+// CLEAR USER INPUT ON SUBMIT
 
 
-// POST TO JSON WITH $POST========================================
 
 
 });
-// CLEAR USER INPUT ON SUBMIT
-
-// COMPARE USER RESULTS TO JSON RESULTS
-
-// MODAL POP OF MATCH
-
-
 // WRITE IN VANILLA JS

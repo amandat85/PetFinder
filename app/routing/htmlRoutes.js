@@ -4,16 +4,18 @@ const path = require("path");
 //ROUTING========================================================
 module.exports = (app) => {
 
+  //Survey Dog
+  app.get("/surveyDogs", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/surveyDogs.html"));
+  });
 
-//Survey
-app.get("/survey", (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/survey.html"));
-    });
+  //Survey Cats
+  app.get("/surveyCats", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/surveyCats.html"));
+  });
 
-//Default Home
-app.get("*", (req, res) => {
+  //Default Home
+  app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/home.html"))
-  }); 
-
-
+  });
 };

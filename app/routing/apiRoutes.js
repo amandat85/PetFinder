@@ -4,17 +4,22 @@ console.log("API Routes successfully connected")
 
 let dogs = require("../data/dogs.js")
 let users = require("../data/users.js")
+let cats = require("../data/cats.js")
 
 module.exports = (app) => {
     app.get("/api/dogs", (req, res) => {
         res.json(dogs);
     });
 
+    app.get("/api/cats", (req, res) => {
+        res.json(cats);
+    });
+
     app.get("/api/users", (req, res) => {
         res.json(users);
     });
 
-    app.post("/api/users", (req, res)=>{
+    app.post("/api/users", (req, res) => {
         let user = req.body.scores;
         let matchName = "";
         let matchPic = "";
@@ -33,7 +38,6 @@ module.exports = (app) => {
                 matchPic = dogs[i].photo;
             }
         }
-        
         users.push(req.body);
         
         res.json({ status: 'OK', name: matchName, photo: matchPic });
