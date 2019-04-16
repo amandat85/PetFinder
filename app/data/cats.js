@@ -27,28 +27,28 @@ let cats = [
     },
     {
         name: "Norwegian Forest",
-        photo: "../assets/images/SaintBernard.jpg",
-        scores: [] 
+        photo: "/static/assets/images/NorwegianForest.jpg",
+        scores: [4, 4, 2, 4, 3, 5, 2, 4, 4, 4] 
     }, 
     {
         name: "Savannah",
-        photo: "../assets/images/LabradorRetriever.jpg",
-        scores: [] 
+        photo: "/static/assets/images/savannah.jpg",
+        scores: [3, 3, 4, 3, 4, 4, 5, 2, 5, 4] 
     },
     {
         name: "Scottish Fold",
-        photo: "../assets/images/Pomeranian.jpg",
-        scores: [] 
+        photo: "/static/assets/images/scottishFold.jpg",
+        scores: [3, 3, 5, 4, 3, 3, 3, 3, 3, 2, 4] 
     },
     {
         name: "Siamese",
-        photo: "../assets/images/CardiganWelshCorgi.jpg",
-        scores: [] 
+        photo: "/static/assets/images/Siamese.jpg",
+        scores: [5, 2, 5, 5, 4, 3, 4, 1, 4, 5] 
     }, 
     {
         name: "Sphynx",
-        photo: "../assets/images/GoldenRetriever.jpg",
-        scores: [] 
+        photo: "/static/assets/images/Sphynx.jpg",
+        scores: [3, 1, 5, 5, 2, 3, 4, 1, 4, 5] 
     },  
 ]
 

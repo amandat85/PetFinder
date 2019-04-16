@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/amandat85/friend-finder#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
     "chosen-js": "^1.8.7",
     "express": "^4.16.4",
     "path": "^0.12.7"

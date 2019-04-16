@@ -15,6 +15,13 @@
 * npm - Path
 * Heroku
 
+## Future Developments
+
+* User ability to login and see saved profile
+* Ability to favourite images and breed information
+* Add more breeds to both cats and dogs
+* Give more detailed information about the breed
+
 ## External Sources Used
 
 * Trupanion Cat Breed Guide - https://trupanion.com/
