@@ -17,6 +17,7 @@ As this project is still in development, there are currenlty only 10 dog and 10 
 * Express
 * npm Chosen-JS
 * npm - Path
+* Google Fonts
 * Heroku
 
 ## How it works
@@ -32,10 +33,10 @@ As this project is still in development, there are currenlty only 10 dog and 10 
 
 ## Screen Captures and GIF
 
-![Pet Finder Home Demo](../assets/images/staticHome.gif)
-![Pet Finder Survey Demo](../assets/images/staticSurvey.gif)
-![Pet Finder Results Demo](../assets/images/staticResults.gif)
-![Pet Finder Demo](../assets/images/petFinder.gif)
+![Pet Finder Home Demo](/assets/images/staticHome.gif)
+![Pet Finder Survey Demo](/assets/images/staticSurvey.gif)
+![Pet Finder Results Demo](/assets/images/staticResults.gif)
+![Pet Finder Demo](/assets/images/petFinder.gif)
 
 ## Future Developments
 
