@@ -26,6 +26,17 @@ As this project is still in development, there are currenlty only 10 dog and 10 
 * The application with then match users with their ideal cat or dog match based on the user's answers.
 * The user's data then gets pushed to either the `usersDogs.js` or the `usersCats.js file.`
 
+## Node Modules
+
+* Run npm install in your terminal in the petFinder directory to get all the node modules used for this project.
+
+## Screen Captures and GIF
+
+![Pet Finder Home Demo](../assets/images/staticHome.gif)
+![Pet Finder Survey Demo](../assets/images/staticSurvey.gif)
+![Pet Finder Results Demo](../assets/images/staticResults.gif)
+![Pet Finder Demo](../assets/images/petFinder.gif)
+
 ## Future Developments
 
 * User ability to login and see saved profile
