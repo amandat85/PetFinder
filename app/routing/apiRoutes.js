@@ -1,10 +1,8 @@
 //GET Route to /api/friends
 //POST route to /api/friends
-console.log("API Routes successfully connected")
-
 let dogs = require("../data/dogs.js")
 let cats = require("../data/cats.js")
-let users = require("../data/users.js")
+let usersDogs = require("../data/usersDogs.js")
 let usersCats = require("../data/usersCats.js")
 
 module.exports = (app) => {
@@ -16,15 +14,15 @@ module.exports = (app) => {
         res.json(cats);
     });
 
-    app.get("/api/users", (req, res) => {
-        res.json(users);
+    app.get("/api/usersDogs", (req, res) => {
+        res.json(usersDogs);
     });
 
     app.get("/api/usersCats", (req, res) => {
         res.json(usersCats);
     });
     //DOG SURVEY=============================================
-    app.post("/api/users", (req, res) => {
+    app.post("/api/usersDogs", (req, res) => {
         let user = req.body.scores;
         let matchName = "";
         let matchPic = "";
@@ -43,7 +41,7 @@ module.exports = (app) => {
                 matchPic = dogs[i].photo;
             }
         }
-        users.push(req.body);
+        usersDogs.push(req.body);
 
         res.json({ status: 'OK', name: matchName, photo: matchPic });
     });
@@ -55,7 +53,6 @@ module.exports = (app) => {
         let difference = 50;
 
         for (let i = 0; i < cats.length; i++) {
-            console.log(cats[i])
             var tempDiff = 0;
 
             for (let j = 0; j < userData.length; j++) {

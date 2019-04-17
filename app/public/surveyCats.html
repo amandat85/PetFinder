@@ -34,7 +34,7 @@
         </div>
 
         <!--Survey Block-->
-        <div class="container mb-5">
+        <div class="container mb-3">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="card border-0">
@@ -216,15 +216,15 @@
                 <!--Images-->
                 <div class="col-lg-4">
                     <div class="card border-0">
-                        <img class="card-img-top" src="/static/assets/images/catFlower.jpg"
-                            alt="Image of Dog with Flowers">
-                        <img class="card-img-top" src="/static/assets/images/catCollar.jpg"
-                            alt="Image of Golden Retriever with Bubbles">
-                        <img class="card-img-top" src="/static/assets/images/catInBowl.jpg" alt="Image of Samoyed">
-                        <img class="card-img-top" src="/static/assets/images/greyCat.jpg"
-                            alt="Image of Corgi Puppy">
-                        <img class="card-img-top" src="/static/assets/images/orangeCat.jpg" alt="Image of Husky">
-                        <img class="card-img-top" src="/static/assets/images/kitten.jpg" alt="Image of Puppies">
+                        <img class="card-img-top img-fluid" src="/static/assets/images/catFlower.jpg"
+                            alt="Cat on Furniture">
+                        <img class="card-img-top img-fluid" src="/static/assets/images/catCollar.jpg"
+                            alt="Image of Cat with Collar">
+                        <img class="card-img-top img-fluid" src="/static/assets/images/catInBowl.jpg" alt="Image of Cat in Bowl">
+                        <img class="card-img-top img-fluid" src="/static/assets/images/greyCat.jpg"
+                            alt="Grey Cat">
+                        <img class="card-img-top img-fluid" src="/static/assets/images/orangeCat.jpg" alt="Orange Cat">
+                        <img class="card-img-top img-fluid" src="/static/assets/images/kitten.jpg" alt="Image of Kitten">
                     </div>
                 </div>
             </div>
@@ -235,16 +235,32 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title">Your New Best Friend</h2>
+                        <h3 class="modal-title">Your Purrfect Mate</h3>
                     </div>
                     <div class="modal-body">
-                        <div class="col-xs-12 col-lg-6 col md-6">
-                            <h2 id="matchName"></h2>
-                            <img id="matchImg" src="" alt="" class="img-responsive">
+                        <div class="col-md-12">
+                            <h4 id="matchName"></h4>
+                            <img id="matchImg" src="" alt="Match" class="img-responsive">
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" id="modalClose" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Input-->
+        <div id="valid" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="col-xs-12 col-lg-6 col md-6">
+                            <p>Please answer all the questions</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="validClose" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>

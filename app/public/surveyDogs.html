@@ -34,15 +34,15 @@
         </div>
 
         <!--Survey Block-->
-        <div class="container mb-5">
+        <div class="container mb-3">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="card border-0">
+                    <div class="card h-80 border-0">
                         <!--About-->
                         <div class="card-header">About</div>
                         <div class="card-body">
                             <form>
-                                <div class="form-group ml-2 mr-2 mt-2">
+                                <div class="form-group ml-2 mr-2 mt-1">
                                     <label>Please provide your name</label>
                                     <input id="name" type="text" class="form-control" placeholder="Name (Required)"><br>
                                     <label>Please provide a link to your photo</label>
@@ -218,17 +218,18 @@
                 <!--Images-->
                 <div class="col-lg-4">
                     <div class="card border-0">
-                        <img class="card-img-top" src="../static/assets/images/dogWithFlowers.jpg"
+                        <img class="card-img-top img-fluid" src="/static/assets/images/dogWithFlowers.jpg"
                             alt="Image of Dog with Flowers">
-                        <img class="card-img-top" src="../static/assets/images/GoldenRetrieverBubbles.jpg"
+                        <img class="card-img-top img-fluid" src="/static/assets/images/GoldenRetrieverBubbles.jpg"
                             alt="Image of Golden Retriever with Bubbles">
-                        <img class="card-img-top" src="../static/assets/images/Samoyed.jpg" alt="Image of Samoyed">
-                        <img class="card-img-top" src="../static/assets/images/dogpuppiescorgi-1555291796214-6455.jpg"
+                        <img class="card-img-top img-fluid" src="/static/assets/images/Samoyed.jpg"
+                            alt="Image of Samoyed">
+                        <img class="card-img-top img-fluid"
+                            src="/static/assets/images/dogpuppiescorgi-1555291796214-6455.jpg"
                             alt="Image of Corgi Puppy">
-                        <img class="card-img-top" src="../static/assets/images/husky.jpg" alt="Image of Husky">
-                        <img class="card-img-top" src="../static/assets/images/Puppies.jpg" alt="Image of Puppies">
-                        <!-- <img class="card-img-top" src="../static/assets/images/labradorCouch.jpg"
-                            alt="Image of Black Labrador"> -->
+                        <img class="card-img-top img-fluid" src="/static/assets/images/husky.jpg" alt="Image of Husky">
+                        <img class="card-img-top img-fluid" src="/static/assets/images/Puppies.jpg"
+                            alt="Image of Puppies">
                     </div>
                 </div>
             </div>
@@ -239,16 +240,34 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title">Your New Best Friend</h2>
+                        <h3 class="modal-title text-center">Your New Best Friend</h3>
                     </div>
                     <div class="modal-body">
-                        <div class="col-xs-12 col-lg-6 col md-6">
-                            <h2 id="matchName"></h2>
-                            <img id="matchImg" src="" alt="" class="img-responsive">
+                        <div class="col-md-12">
+                            <h4 id="matchName"></h4>
+                            <img id="matchImg" src="" alt="Match Image" class="img-fluid">
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" id="modalClose" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default" id="modalClose"
+                            data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Input-->
+        <div id="valid" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="col-md-12">
+                            <p>Please answer all the questions</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="validClose"
+                            data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -256,14 +275,15 @@
         <!--Footer-->
         <footer class="footer">
             <div class="container">
-                <p><a href="/api/dogs">API Dog List</a><span> | </span> 
-                    <a href="https://github.com/amandat85/friend-finder" target="_blank"><i class="fab fa-github-square"></i> Repo</a><span> | </span> 
+                <p><a href="/api/dogs">API Dog List</a><span> | </span>
+                    <a href="https://github.com/amandat85/friend-finder" target="_blank"><i
+                            class="fab fa-github-square"></i> Repo</a><span> | </span>
                     <a href="/"><i class="fa fa-home" aria-hidden="true"></i>Home</a></p>
             </div>
         </footer>
     </div>
     <!--JavaScript-->
-    <script type="text/javascript" src="./static/assets/js/dogSurvey.js"></script>
+    <script type="text/javascript" src="/static/assets/js/dogSurvey.js"></script>
     <!--Bootstrap Additions-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

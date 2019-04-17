@@ -1,5 +1,9 @@
 # Pet Finder
 
+A compatibility-based application to help people find their best pet match. By answering 10 questions, users will then be matched to a dog or a cat based on their answer choices.
+
+As this project is still in development, there are currenlty only 10 dog and 10 cat breeds available.
+
 ## Website
 
 ## Languages, Tools and Technologies
@@ -14,6 +18,13 @@
 * npm Chosen-JS
 * npm - Path
 * Heroku
+
+## How it works
+
+* Users will be asked to choose between a survey built for cats or for dogs.
+* Users will answer 10 questions and input their name and a link to their photo.
+* The application with then match users with their ideal cat or dog match based on the user's answers.
+* The user's data then gets pushed to either the `usersDogs.js` or the `usersCats.js file.`
 
 ## Future Developments
 

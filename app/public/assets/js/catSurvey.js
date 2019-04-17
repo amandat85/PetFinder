@@ -40,9 +40,8 @@ $("#submitBtn").on("click", function (event) {
             $("#matchModal").modal("toggle")
         });
     }
-    //Turn into model
     else {
-        alert("Please fill in all fields")
+        $("#valid").modal("toggle");
     }
     // CLEAR USER INPUT ON SUBMIT
     $('#name').val("");

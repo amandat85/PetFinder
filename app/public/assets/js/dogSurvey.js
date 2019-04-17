@@ -34,15 +34,14 @@ $("#submitBtn").on("click", function (event) {
             ]
         }
         // POST TO JSON WITH $POST========================================        
-        $.post("/api/users", user, function (data) {
+        $.post("/api/usersDogs", user, function (data) {
             $("#matchName").text(data.name);
             $("#matchImg").attr("src", data.photo);
             $("#matchModal").modal("toggle")
         });
     }
-    //Turn into model
     else {
-        alert("Please fill in all fields")
+        $("#valid").modal("toggle")
     }
     // CLEAR USER INPUT ON SUBMIT
     $('#name').val("");
