@@ -33,10 +33,10 @@ As this project is still in development, there are currenlty only 10 dog and 10 
 
 ## Screen Captures and GIF
 
-![Pet Finder Home Demo](/assets/images/staticHome.gif)
-![Pet Finder Survey Demo](/assets/images/staticSurvey.gif)
-![Pet Finder Results Demo](/assets/images/staticResults.gif)
-![Pet Finder Demo](/assets/images/petFinder.gif)
+![Pet Finder Home Demo](staticHome.png)
+![Pet Finder Survey Demo](staticSurvey.png)
+![Pet Finder Results Demo](staticResults.png)
+![Pet Finder Demo](petFinder.gif)
 
 ## Future Developments
 
