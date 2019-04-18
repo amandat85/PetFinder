@@ -22,14 +22,12 @@ h1, h2, h3 {
 }
 
 .main {
-    /* background-color: #8B8C70; */
     background-color: #859A96
 }
 
 .jumbotron {
     background: none;
     color: #F5EFE2;
-    height: 9rem;
 }
 
 .card {

@@ -39,12 +39,13 @@ $("#submitBtn").on("click", function (event) {
             $("#matchImg").attr("src", data.photo);
             $("#matchModal").modal("toggle")
         });
+        // CLEAR USER INPUT ON SUBMIT
+        $('#name').val("");
+        $('#photo').val("");
+        $(".chosen-select").val("0").trigger("chosen:updated");
     }
     else {
         $("#valid").modal("toggle")
     }
-    // CLEAR USER INPUT ON SUBMIT
-    $('#name').val("");
-    $('#photo').val("");
-    $(".chosen-select").val("0").trigger("chosen:updated");
+
 });
