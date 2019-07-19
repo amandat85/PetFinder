@@ -7,6 +7,9 @@ As this project is still in development, there are currenlty only 10 dog and 10 
 ## Website
 https://fathomless-taiga-89875.herokuapp.com/
 
+## Homework Instructions
+[Homework Details](homework_instructions.md)
+
 ## Languages, Tools and Technologies
 
 * HTML 5
